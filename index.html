@@ -2,250 +2,122 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <!-- Y4: Responsive Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToyWorld - Thế Giới Đồ Chơi Sáng Tạo & Thông Minh</title>
-    
-    <!-- Google Fonts: Quicksand & Fredoka cho chủ đề đồ chơi sinh động -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Y1: CSS External -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Y1: Demo CSS Internal -->
-    <style>
-        .badge-sale {
-            background: linear-gradient(135deg, #ff4757, #ff6b81);
-            color: #fff;
-            padding: 4px 10px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            border-radius: 20px;
-            text-transform: uppercase;
-            box-shadow: 0 2px 6px rgba(255, 71, 87, 0.4);
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            z-index: 2;
-        }
-    </style>
 </head>
 <body>
 
-    <!-- ==============================================
-         HEADER & NAVIGATION BAR (Flexbox Layout - Y3)
-         ============================================== -->
-    <header class="header" id="header">
+    <!-- Header dùng chung -->
+    <header class="header">
         <div class="container nav-container">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <i class="fa-solid fa-shapes logo-icon"></i>
                 <span>Toy<span class="highlight">World</span></span>
             </a>
-
-            <!-- Menu Navigation -->
             <nav class="navbar" id="navbar">
                 <ul class="nav-list">
-                    <li><a href="#hero" class="nav-link active">Trang chủ</a></li>
-                    <li><a href="#features" class="nav-link">Điểm nổi bật</a></li>
-                    <li><a href="#about" class="nav-link">Giới thiệu</a></li>
-                    <li><a href="#products" class="nav-link">Sản phẩm</a></li>
-                    <li><a href="#services" class="nav-link">Dịch vụ</a></li>
-                    <li><a href="#age-table" class="nav-link">Bảng độ tuổi</a></li>
-                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                    <li><a href="index.html" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="about.html" class="nav-link">Giới thiệu</a></li>
+                    <li><a href="products.html" class="nav-link">Sản phẩm</a></li>
+                    <li><a href="services.html" class="nav-link">Dịch vụ</a></li>
+                    <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
                 </ul>
             </nav>
-
             <div class="header-actions">
-                <a href="#contact" class="cart-btn" title="Giỏ hàng">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                    <span class="cart-count">3</span>
-                </a>
-                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                <a href="contact.html" class="cart-btn" title="Giỏ hàng"><i class="fa-solid fa-basket-shopping"></i><span class="cart-count">3</span></a>
+                <button class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
             </div>
         </div>
     </header>
 
-    <!-- ==============================================
-         HERO SECTION / SLIDESHOW BANNER (Y4 - Slideshow)
-         ============================================== -->
+    <!-- Banner Slideshow -->
     <section class="hero" id="hero">
         <div class="slider-container">
-            <!-- Slide 1 -->
             <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1400&q=80');">
                 <div class="slide-content">
-                    <span class="sub-title">Khám Phá Sáng Tạo 2026</span>
+                    <span class="sub-title">Bộ Sưu Tập 2026</span>
                     <h1 class="hero-title">Thế Giới Đồ Chơi Thông Minh Dành Cho Bé</h1>
                     <p class="hero-desc">Đánh thức trí tưởng tượng, kích thích tư duy logic với hàng ngàn bộ đồ chơi an toàn đạt tiêu chuẩn quốc tế.</p>
                     <div class="hero-btn-group">
-                        <a href="#products" class="btn btn-primary">Khám Phá Ngay <i class="fa-solid fa-arrow-right"></i></a>
-                        <!-- Y1: Demo Inline CSS -->
-                        <a href="#about" class="btn btn-outline" style="border-width: 2px;">Tìm Hiểu Thêm</a>
+                        <a href="products.html" class="btn btn-primary">Khám Phá Cửa Hàng <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="about.html" class="btn btn-outline">Về Chúng Tôi</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
             <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1400&q=80');">
                 <div class="slide-content">
-                    <span class="sub-title">Bộ Sưu Tập Đỉnh Cao</span>
+                    <span class="sub-title">Khám Phá STEM</span>
                     <h1 class="hero-title">Lego & Xếp Hình Kỹ Sư Nhí</h1>
                     <p class="hero-desc">Rèn luyện tính kiên nhẫn và kỹ năng giải quyết vấn đề qua từng mảnh ghép kỳ diệu.</p>
                     <div class="hero-btn-group">
-                        <a href="#products" class="btn btn-primary">Xem Bộ Sưu Tập</a>
-                        <a href="#contact" class="btn btn-outline">Nhận Tư Vấn</a>
+                        <a href="products.html" class="btn btn-primary">Xem Sản Phẩm</a>
+                        <a href="contact.html" class="btn btn-outline">Nhận Tư Vấn</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Slide 3 -->
-            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1400&q=80');">
-                <div class="slide-content">
-                    <span class="sub-title">Ưu Đãi Đặc Biệt</span>
-                    <h1 class="hero-title">Quà Tặng Sinh Nhật Lung Linh</h1>
-                    <p class="hero-desc">Dịch vụ gói quà tận tâm, thiệp mừng độc đáo trao trọn yêu thương đến các thiên thần nhỏ.</p>
-                    <div class="hero-btn-group">
-                        <a href="#services" class="btn btn-primary">Dịch Vụ Gói Quà</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nút điều hướng Slide -->
-            <button class="slider-btn prev-btn" id="prevSlide" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="slider-btn next-btn" id="nextSlide" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
-
-            <!-- Dots -->
-            <div class="slider-dots" id="sliderDots">
+            <button class="slider-btn prev-btn" id="prevSlide"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" id="nextSlide"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="slider-dots">
                 <span class="dot active" data-index="0"></span>
                 <span class="dot" data-index="1"></span>
-                <span class="dot" data-index="2"></span>
             </div>
         </div>
     </section>
 
-    <!-- ==============================================
-         FEATURES SECTION (Y3: Flexbox & Y2: Hover / Box-Model)
-         ============================================== -->
-    <section class="features section" id="features">
+    <!-- 4 Đặc điểm nổi bật -->
+    <section class="features section">
         <div class="container">
             <div class="section-header text-center">
                 <span class="section-tag">Cam Kết Chất Lượng</span>
                 <h2 class="section-title">Tại Sao Phụ Huynh Tin Chọn ToyWorld?</h2>
                 <div class="title-underline"></div>
             </div>
-
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon icon-yellow">
-                        <i class="fa-solid fa-shield-heart"></i>
-                    </div>
-                    <h3 class="feature-heading">100% An Toàn Cho Bé</h3>
-                    <p class="feature-text">Chất liệu nhựa ABS nguyên sinh cao cấp, không góc cạnh sắc nhọn, không chứa chất độc hại BPA.</p>
+                    <div class="feature-icon icon-yellow"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3 class="feature-heading">100% An Toàn</h3>
+                    <p class="feature-text">Nhựa ABS nguyên sinh, góc bo nhẵn mịn, không BPA độc hại.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon icon-blue">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-                    <h3 class="feature-heading">Phát Triển Tư Duy (STEM)</h3>
-                    <p class="feature-text">Các bộ trò chơi khoa học, công nghệ giúp khơi dậy tiềm năng toán học và tư duy giải quyết vấn đề.</p>
+                    <div class="feature-icon icon-blue"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="feature-heading">Phát Triển Tư Duy</h3>
+                    <p class="feature-text">Đồ chơi giáo dục STEM giúp phát triển nhận thức và tính sáng tạo.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon icon-green">
-                        <i class="fa-solid fa-truck-fast"></i>
-                    </div>
+                    <div class="feature-icon icon-green"><i class="fa-solid fa-truck-fast"></i></div>
                     <h3 class="feature-heading">Giao Hỏa Tốc 2H</h3>
-                    <p class="feature-text">Đóng gói chống sốc kỹ lưỡng, giao siêu tốc trong 2 giờ nội thành để kịp mọi dịp lễ và sinh nhật.</p>
+                    <p class="feature-text">Đóng gói chống sốc kỹ càng, nhận hàng trong 2h tại nội thành.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-icon icon-pink">
-                        <i class="fa-solid fa-rotate-left"></i>
-                    </div>
+                    <div class="feature-icon icon-pink"><i class="fa-solid fa-rotate-left"></i></div>
                     <h3 class="feature-heading">Đổi Trả 7 Ngày</h3>
-                    <p class="feature-text">Miễn phí đổi mới sản phẩm trong 7 ngày nếu bé không vừa ý hoặc phát sinh lỗi từ nhà sản xuất.</p>
+                    <p class="feature-text">Đổi mới miễn phí trong 7 ngày nếu không ưng ý hoặc lỗi kỹ thuật.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==============================================
-         ABOUT US SECTION (Y3: Flexbox 2 cột & Y2: Hiệu ứng ảnh)
-         ============================================== -->
-    <section class="about section" id="about">
-        <div class="container about-wrapper">
-            <div class="about-image-col">
-                <div class="about-image-box">
-                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80" alt="Showroom Thế giới đồ chơi ToyWorld" class="about-img">
-                    <div class="experience-badge">
-                        <span class="badge-number">10+</span>
-                        <span class="badge-text">Năm Đồng Hành Cùng Trẻ Thơ</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-text-col">
-                <span class="section-tag">Về Chúng Tôi</span>
-                <h2 class="section-title">Khơi Nguồn Nụ Cười & Nuôi Dưỡng Ước Mơ</h2>
-                <div class="title-underline left"></div>
-                <p class="about-desc">
-                    Khởi đầu từ một góc nhỏ tràn ngập đam mê đồ chơi thủ công, <strong>ToyWorld</strong> nay đã trở thành hệ thống phân phối đồ chơi giáo dục và giải trí hàng đầu cho trẻ em Việt Nam.
-                </p>
-                <p class="about-desc">
-                    Chúng tôi tin rằng, mỗi món đồ chơi không đơn thuần là vật giải trí mà chính là <em>"người thầy đầu đời"</em> mở ra chân trời khám phá khoa học, phát triển cảm xúc xã hội và xây đắp ký ức tuổi thơ tươi đẹp.
-                </p>
-
-                <!-- Y1: Danh sách có định dạng (ul/li) -->
-                <ul class="about-list">
-                    <li><i class="fa-solid fa-circle-check"></i> Hơn 5,000 mã sản phẩm chính hãng nhập khẩu từ Mỹ, Nhật, Đức.</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Đạt chứng nhận hợp quy an toàn QCVN 3:2019/BKHCN.</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Khu trải nghiệm chơi thử miễn phí trực tiếp tại showroom.</li>
-                </ul>
-
-                <a href="#contact" class="btn btn-secondary">Ghé Thăm Showroom</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================================
-         PRODUCTS SECTION (Y3: CSS Grid & Y2: Card hover effect & Y4: Lightbox)
-         ============================================== -->
-    <section class="products section" id="products">
+    <!-- Sản phẩm tiêu biểu trang chủ -->
+    <section class="products section">
         <div class="container">
             <div class="section-header text-center">
-                <span class="section-tag">Bộ Sưu Tập Nổi Bật</span>
-                <h2 class="section-title">Sản Phẩm Được Các Bé Yêu Thích Nhất</h2>
+                <span class="section-tag">Hot Deals Tuần Này</span>
+                <h2 class="section-title">Sản Phẩm Được Mua Nhiều Nhất</h2>
                 <div class="title-underline"></div>
             </div>
-
             <div class="products-grid">
-                <!-- Sản phẩm 1 -->
                 <div class="product-card">
                     <div class="product-thumb">
                         <span class="badge-sale">-20%</span>
-                        <img src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&fit=crop&w=600&q=80" alt="Bộ Xếp Hình Lego Thành Phố Kỳ Thú">
-                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&fit=crop&w=1200&q=80" data-title="Bộ Xếp Hình Lego Thành Phố Kỳ Thú">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> Xem lớn ảnh
-                        </button>
+                        <img src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&fit=crop&w=600&q=80" alt="Lego Tàu Vũ Trụ">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&fit=crop&w=1200&q=80" data-title="Lego Tàu Vũ Trụ">Xem lớn ảnh</button>
                     </div>
                     <div class="product-body">
-                        <span class="product-category">Lego & Xếp hình</span>
-                        <h3 class="product-title"><a href="#">Bộ Lego Tàu Vũ Trụ Khám Phá Sao Hỏa</a></h3>
-                        <div class="product-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span>(48)</span>
-                        </div>
+                        <span class="product-category">Lego & Lắp Ráp</span>
+                        <h3 class="product-title"><a href="products.html">Bộ Lego Tàu Vũ Trụ Khám Phá Sao Hỏa</a></h3>
                         <div class="product-price-box">
                             <span class="old-price">850.000đ</span>
                             <span class="current-price">680.000đ</span>
@@ -254,26 +126,15 @@
                     </div>
                 </div>
 
-                <!-- Sản phẩm 2 -->
                 <div class="product-card">
                     <div class="product-thumb">
                         <span class="badge-sale">Mới</span>
-                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Robot Thông Minh Lập Trình STEM">
-                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80" data-title="Robot Thông Minh Lập Trình STEM">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> Xem lớn ảnh
-                        </button>
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Robot Thông Minh">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80" data-title="Robot Thông Minh">Xem lớn ảnh</button>
                     </div>
                     <div class="product-body">
                         <span class="product-category">Robot Công Nghệ</span>
-                        <h3 class="product-title"><a href="#">Robot Nhảy Múa Cảm Biến Cử Chỉ</a></h3>
-                        <div class="product-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <span>(32)</span>
-                        </div>
+                        <h3 class="product-title"><a href="products.html">Robot Nhảy Múa Cảm Biến Cử Chỉ</a></h3>
                         <div class="product-price-box">
                             <span class="current-price">490.000đ</span>
                         </div>
@@ -281,26 +142,15 @@
                     </div>
                 </div>
 
-                <!-- Sản phẩm 3 -->
                 <div class="product-card">
                     <div class="product-thumb">
                         <span class="badge-sale">-15%</span>
-                        <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=600&q=80" alt="Gấu Bông Thỏ Vải Organic Siêu Mềm">
-                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=1200&q=80" data-title="Gấu Bông Thỏ Vải Organic Siêu Mềm">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> Xem lớn ảnh
-                        </button>
+                        <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=600&q=80" alt="Gấu Bông Organic">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=1200&q=80" data-title="Gấu Bông Organic">Xem lớn ảnh</button>
                     </div>
                     <div class="product-body">
-                        <span class="product-category">Thú Bông & Búp Bê</span>
-                        <h3 class="product-title"><a href="#">Gấu Bông Vải Organic Siêu Mềm</a></h3>
-                        <div class="product-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <span>(95)</span>
-                        </div>
+                        <span class="product-category">Thú Bông Vải Mềm</span>
+                        <h3 class="product-title"><a href="products.html">Gấu Bông Vải Organic Cao Cấp</a></h3>
                         <div class="product-price-box">
                             <span class="old-price">320.000đ</span>
                             <span class="current-price">272.000đ</span>
@@ -309,26 +159,15 @@
                     </div>
                 </div>
 
-                <!-- Sản phẩm 4 -->
                 <div class="product-card">
                     <div class="product-thumb">
                         <span class="badge-sale">Hot</span>
-                        <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80" alt="Bộ Trò Chơi Cờ Tỷ Phú Gia Đình">
-                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=1200&q=80" data-title="Bộ Trò Chơi Cờ Tỷ Phú Gia Đình">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i> Xem lớn ảnh
-                        </button>
+                        <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80" alt="Cờ Tỷ Phú">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=1200&q=80" data-title="Cờ Tỷ Phú">Xem lớn ảnh</button>
                     </div>
                     <div class="product-body">
-                        <span class="product-category">Board Game Gia Đình</span>
-                        <h3 class="product-title"><a href="#">Bộ Trò Chơi Cờ Tỷ Phú Bản Chuẩn</a></h3>
-                        <div class="product-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <span>(67)</span>
-                        </div>
+                        <span class="product-category">Board Game</span>
+                        <h3 class="product-title"><a href="products.html">Bộ Trò Chơi Cờ Tỷ Phú Phiên Bản Việt</a></h3>
                         <div class="product-price-box">
                             <span class="current-price">350.000đ</span>
                         </div>
@@ -336,316 +175,89 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ==============================================
-         SERVICES SECTION (Y3: Flexbox / Grid)
-         ============================================== -->
-    <section class="services section" id="services">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-tag">Dịch Vụ Của Chúng Tôi</span>
-                <h2 class="section-title">Giải Pháp Toàn Diện Cho Bé & Gia Đình</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80" alt="Dịch Vụ Gói Quà Nghệ Thuật">
-                    </div>
-                    <div class="service-info">
-                        <h3>Gói Quà Sinh Nhật Nghệ Thuật</h3>
-                        <p>Hàng chục mẫu giấy bọc quà ngộ nghĩnh, nơ ruy băng thủ công kèm thiệp viết tay theo lời chúc của ba mẹ.</p>
-                        <a href="#contact" class="service-link">Đặt dịch vụ <i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80" alt="Cho Thuê Đồ Chơi Sự Kiện">
-                    </div>
-                    <div class="service-info">
-                        <h3>Cho Thuê Đồ Chơi Sự Kiện</h3>
-                        <p>Cung cấp nhà hơi, cầu trượt, đường đua xe điện cho tiệc thôi nôi, sinh nhật, sự kiện trường mầm non.</p>
-                        <a href="#contact" class="service-link">Đặt dịch vụ <i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Bảo Trì & Sửa Chữa Đồ Chơi">
-                    </div>
-                    <div class="service-info">
-                        <h3>Sửa Chữa & Bảo Trì Đồ Chơi</h3>
-                        <p>Hỗ trợ thay pin sạc, vi mạch điều khiển, hàn gắn chi tiết bị nứt vỡ cho các dòng đồ chơi điện tử cao cấp.</p>
-                        <a href="#contact" class="service-link">Đặt dịch vụ <i class="fa-solid fa-angle-right"></i></a>
-                    </div>
-                </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="products.html" class="btn btn-secondary">Xem Tất Cả 500+ Sản Phẩm <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- ==============================================
-         AGE TABLE SECTION (Y1: Table & Định dạng bảng)
-         ============================================== -->
-    <section class="age-table-section section" id="age-table">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-tag">Hướng Dẫn Phụ Huynh</span>
-                <h2 class="section-title">Bảng Gợi Ý Đồ Chơi Phù Hợp Theo Độ Tuổi</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="table-responsive">
-                <table class="custom-table">
-                    <thead>
-                        <tr>
-                            <th>Độ Tuổi</th>
-                            <th>Mục Tiêu Phát Triển</th>
-                            <th>Loại Đồ Chơi Khuyến Nghị</th>
-                            <th>Lưu Ý An Toàn</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Dưới 1 tuổi</strong></td>
-                            <td>Kích thích giác quan (thị giác, xúc giác, thính giác)</td>
-                            <td>Xúc xắc, thảm nhạc, gặm nướu silicon, sách vải</td>
-                            <td>Không có chi tiết nhỏ dưới 3cm, vật liệu organic</td>
-                        </tr>
-                        <tr>
-                            <td><strong>1 - 3 tuổi</strong></td>
-                            <td>Vận động tinh, nhận diện màu sắc, hình khối</td>
-                            <td>Thả khối gỗ, xe tập đi, đất nặn hữu cơ, tháp xếp chồng</td>
-                            <td>Góc bo tròn nhẵn mịn, màu sơn gốc thực vật</td>
-                        </tr>
-                        <tr>
-                            <td><strong>4 - 6 tuổi</strong></td>
-                            <td>Trí tưởng tượng, khả năng nhập vai & giao tiếp</td>
-                            <td>Lego Duplo, đồ hàng nấu ăn, búp bê, bộ đồ nghề bác sĩ</td>
-                            <td>Rèn luyện tính tự giác cất dọn sau khi chơi</td>
-                        </tr>
-                        <tr>
-                            <td><strong>7 - 12 tuổi</strong></td>
-                            <td>Tư duy logic, giải quyết vấn đề, tính kiên nhẫn</td>
-                            <td>Lego Technic, robot điều khiển, cờ vua, board game</td>
-                            <td>Hướng dẫn an toàn khi sạc pin các thiết bị điều khiển</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================================
-         CONTACT & GOOGLE MAP SECTION (Y1: Form + Y4: Map iframe)
-         ============================================== -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-tag">Kết Nối Với Chúng Tôi</span>
-                <h2 class="section-title">Liên Hệ & Ghé Thăm Showroom</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="contact-wrapper">
-                <!-- Cột Form liên hệ -->
-                <div class="contact-card">
-                    <h3 class="contact-heading"><i class="fa-solid fa-envelope-open-text"></i> Gửi Tin Nhắn Cho ToyWorld</h3>
-                    <p class="contact-sub">Hãy để lại thông tin, nhân viên tư vấn sẽ liên hệ lại trong vòng 15 phút!</p>
-
-                    <!-- Y1: Form Thân Thiện Người Dùng -->
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="fullName">Họ và tên phụ huynh: <span class="required">*</span></label>
-                            <input type="text" id="fullName" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" required>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Địa chỉ Email: <span class="required">*</span></label>
-                                <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Số điện thoại: <span class="required">*</span></label>
-                                <input type="tel" id="phone" class="form-control" placeholder="0912 345 678" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="toyCategory">Loại đồ chơi cần tư vấn:</label>
-                            <select id="toyCategory" class="form-control">
-                                <option value="lego">Lego & Lắp ráp thông minh</option>
-                                <option value="stem">Robot & Khoa học STEM</option>
-                                <option value="doll">Búp bê & Gấu bông vải mềm</option>
-                                <option value="boardgame">Board game gia đình</option>
-                                <option value="service">Dịch vụ gói quà / Sự kiện</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Nội dung tin nhắn / Độ tuổi của bé: <span class="required">*</span></label>
-                            <textarea id="message" rows="4" class="form-control" placeholder="Bé nhà mình 5 tuổi, thích các loại xe đua và lắp ráp..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fa-solid fa-paper-plane"></i> Gửi Yêu Cầu Tư Vấn
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Cột Bản đồ Google Maps (Y4) & Thông tin liên hệ -->
-                <div class="contact-map-card">
-                    <div class="info-items">
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div>
-                                <h4>Địa Chỉ Showroom:</h4>
-                                <p>Tòa nhà FPT Polytechnic, Phố Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
-                            <div>
-                                <h4>Hotline Hỗ Trợ:</h4>
-                                <p>1900 6868 - 024 7300 1955</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
-                            <div>
-                                <h4>Giờ Mở Cửa:</h4>
-                                <p>08:00 - 21:30 (Tất cả các ngày trong tuần)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Y4: Google Maps Embed Iframe -->
-                    <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8638558814234!2d105.74459841540242!3d21.038132792834316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0xa0c841b9972322a3!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1680000000000!5m2!1svi!2s" 
-                            width="100%" 
-                            height="280" 
-                            style="border:0; border-radius: 12px;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Bản đồ chỉ đường tới ToyWorld Showroom">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================================
-         FOOTER SECTION (Y1: Liên kết & Danh sách)
-         ============================================== -->
+    <!-- Footer dùng chung -->
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-col">
-                <a href="#" class="logo footer-logo">
+                <a href="index.html" class="logo footer-logo">
                     <i class="fa-solid fa-shapes logo-icon"></i>
                     <span>Toy<span class="highlight">World</span></span>
                 </a>
                 <p class="footer-text">Hệ thống phân phối đồ chơi trẻ em cao cấp hàng đầu, mang niềm vui và trí tuệ đến hàng triệu gia đình Việt Nam.</p>
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
-
             <div class="footer-col">
-                <h4 class="footer-title">Về ToyWorld</h4>
+                <h4 class="footer-title">Liên Kết Nhanh</h4>
                 <ul class="footer-links">
-                    <li><a href="#about">Câu chuyện thương hiệu</a></li>
-                    <li><a href="#products">Sản phẩm nổi bật</a></li>
-                    <li><a href="#services">Dịch vụ gói quà sinh nhật</a></li>
-                    <li><a href="#age-table">Cẩm nang nuôi dạy con</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Về chúng tôi</a></li>
+                    <li><a href="products.html">Cửa hàng đồ chơi</a></li>
+                    <li><a href="services.html">Dịch vụ gói quà</a></li>
+                    <li><a href="contact.html">Liên hệ & Bản đồ</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
-                <h4 class="footer-title">Chính Sách Khách Hàng</h4>
+                <h4 class="footer-title">Chính Sách</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Chính sách bảo hành đồ chơi</a></li>
-                    <li><a href="#">Chính sách đổi trả trong 7 ngày</a></li>
-                    <li><a href="#">Quy định giao hàng siêu tốc</a></li>
-                    <li><a href="#">Bảo mật thông tin khách hàng</a></li>
+                    <li><a href="#">Bảo hành 12 tháng</a></li>
+                    <li><a href="#">Đổi trả trong 7 ngày</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Bảo mật thông tin</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
-                <h4 class="footer-title">Đăng Ký Nhận Tin</h4>
-                <p class="footer-text">Nhận ngay voucher giảm giá 10% cho đơn hàng đầu tiên!</p>
-                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký nhận tin từ ToyWorld!');">
-                    <input type="email" placeholder="Nhập email của bạn..." required>
+                <h4 class="footer-title">Đăng Ký Nhận Voucher</h4>
+                <p class="footer-text">Nhận ngay mã giảm giá 10% cho đơn hàng đầu tiên!</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký!');">
+                    <input type="email" placeholder="Nhập email..." required>
                     <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
-
         <div class="footer-bottom">
             <div class="container text-center">
-                <p>&copy; 2026 <strong>ToyWorld</strong>. Dự Án Môn Xây Dựng Trang Web - FPT Polytechnic. All rights reserved.</p>
+                <p>&copy; 2026 <strong>ToyWorld</strong>. Assignment Môn Xây Dựng Trang Web - FPT Polytechnic.</p>
             </div>
         </div>
     </footer>
 
-    <!-- ==============================================
-         Y4: TÍCH HỢP LIGHTBOX MODAL
-         ============================================== -->
+    <!-- Tiện ích Lightbox & Chatbox -->
     <div class="lightbox-modal" id="lightboxModal">
         <span class="lightbox-close" id="lightboxClose">&times;</span>
-        <img class="lightbox-img" id="lightboxImage" src="" alt="Ảnh phóng to chi tiết">
+        <img class="lightbox-img" id="lightboxImage" src="" alt="Ảnh lớn">
         <div class="lightbox-caption" id="lightboxCaption"></div>
     </div>
-
-    <!-- ==============================================
-         Y4: TÍCH HỢP LIVE CHATBOX TIỆN ÍCH
-         ============================================== -->
     <div class="chatbox-widget">
-        <!-- Nút tròn toggle chat -->
-        <button class="chatbox-btn" id="chatToggleBtn" aria-label="Hỗ trợ trực tuyến">
-            <i class="fa-solid fa-comments"></i>
-        </button>
-
-        <!-- Khung chat popup -->
+        <button class="chatbox-btn" id="chatToggleBtn"><i class="fa-solid fa-comments"></i></button>
         <div class="chatbox-window" id="chatWindow">
             <div class="chatbox-header">
                 <div class="chat-agent">
                     <div class="agent-avatar"><i class="fa-solid fa-robot"></i></div>
-                    <div>
-                        <h4>ToyWorld Support</h4>
-                        <span class="status"><i class="fa-solid fa-circle"></i> Trực tuyến</span>
-                    </div>
+                    <div><h4>ToyWorld Bot</h4><span style="font-size: 0.7rem; color: #2ed573;">Trực tuyến</span></div>
                 </div>
                 <button class="chat-close" id="chatCloseBtn">&times;</button>
             </div>
-
             <div class="chatbox-body" id="chatBody">
-                <div class="chat-msg bot">
-                    Xin chào ba mẹ! ToyWorld có thể hỗ trợ tư vấn chọn đồ chơi cho bé mấy tuổi ạ? 😊
-                </div>
+                <div class="chat-msg bot">Chào bạn! ToyWorld có thể hỗ trợ tư vấn đồ chơi cho bé mấy tuổi ạ? 😊</div>
             </div>
-
             <form class="chatbox-footer" id="chatForm">
-                <input type="text" id="chatInput" placeholder="Nhập câu hỏi của bạn..." autocomplete="off" required>
+                <input type="text" id="chatInput" placeholder="Nhập câu hỏi..." required>
                 <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
             </form>
         </div>
     </div>
-
-    <!-- Nút cuộn lên đầu trang -->
-    <a href="#" class="back-to-top" id="backToTop" aria-label="Cuộn lên đầu trang">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
-
-    <!-- Scripts (Y4) -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm - ToyWorld</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-shapes logo-icon"></i>
+                <span>Toy<span class="highlight">World</span></span>
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+                    <li><a href="about.html" class="nav-link">Giới thiệu</a></li>
+                    <li><a href="products.html" class="nav-link active">Sản phẩm</a></li>
+                    <li><a href="services.html" class="nav-link">Dịch vụ</a></li>
+                    <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="cart-btn"><i class="fa-solid fa-basket-shopping"></i><span class="cart-count">3</span></a>
+                <button class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <div class="container">
+            <h1>Cửa Hàng Đồ Chơi</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Trang chủ</a> <span>/</span> Sản phẩm
+            </div>
+        </div>
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    <section class="products section">
+        <div class="container">
+            <!-- Bộ lọc danh mục -->
+            <div class="product-filter">
+                <button class="filter-btn active">Tất Cả</button>
+                <button class="filter-btn">Lego & Xếp Hình</button>
+                <button class="filter-btn">Robot STEM</button>
+                <button class="filter-btn">Thú Bông Vải Mềm</button>
+                <button class="filter-btn">Board Game Gia Đình</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Sp 1 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <span class="badge-sale">-20%</span>
+                        <img src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&fit=crop&w=600&q=80" alt="Lego Tàu Vũ Trụ">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?auto=format&fit=crop&w=1200&q=80" data-title="Lego Tàu Vũ Trụ Khám Phá Sao Hỏa">Xem lớn ảnh</button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Lego & Xếp Hình</span>
+                        <h3 class="product-title"><a href="#">Bộ Lego Tàu Vũ Trụ Khám Phá Sao Hỏa</a></h3>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(48)</span></div>
+                        <div class="product-price-box"><span class="old-price">850.000đ</span><span class="current-price">680.000đ</span></div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+
+                <!-- Sp 2 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <span class="badge-sale">Mới</span>
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Robot Thông Minh">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80" data-title="Robot Nhảy Múa Cảm Biến Cử Chỉ">Xem lớn ảnh</button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Robot Công Nghệ</span>
+                        <h3 class="product-title"><a href="#">Robot Nhảy Múa Cảm Biến Cử Chỉ</a></h3>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span>(32)</span></div>
+                        <div class="product-price-box"><span class="current-price">490.000đ</span></div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+
+                <!-- Sp 3 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <span class="badge-sale">-15%</span>
+                        <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=600&q=80" alt="Gấu Bông Organic">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=1200&q=80" data-title="Gấu Bông Vải Organic Siêu Mềm">Xem lớn ảnh</button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Thú Bông Vải Mềm</span>
+                        <h3 class="product-title"><a href="#">Gấu Bông Vải Organic Siêu Mềm</a></h3>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(95)</span></div>
+                        <div class="product-price-box"><span class="old-price">320.000đ</span><span class="current-price">272.000đ</span></div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+
+                <!-- Sp 4 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <span class="badge-sale">Hot</span>
+                        <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80" alt="Cờ Tỷ Phú">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=1200&q=80" data-title="Cờ Tỷ Phú Bản Chuẩn">Xem lớn ảnh</button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Board Game</span>
+                        <h3 class="product-title"><a href="#">Bộ Trò Chơi Cờ Tỷ Phú Bản Chuẩn</a></h3>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(67)</span></div>
+                        <div class="product-price-box"><span class="current-price">350.000đ</span></div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+
+                <!-- Sp 5 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <span class="badge-sale">-10%</span>
+                        <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=600&q=80" alt="Bộ Xếp Khối Gỗ">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1200&q=80" data-title="Bộ Khối Gỗ Màu Sắc Montessori">Xem lớn ảnh</button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Đồ Chơi Gỗ</span>
+                        <h3 class="product-title"><a href="#">Bộ Khối Gỗ Màu Sắc Montessori</a></h3>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(41)</span></div>
+                        <div class="product-price-box"><span class="old-price">290.000đ</span><span class="current-price">260.000đ</span></div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+
+                <!-- Sp 6 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <span class="badge-sale">Mới</span>
+                        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=600&q=80" alt="Xe Đua Điều Khiển">
+                        <button class="quick-view-btn lightbox-trigger" data-src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1200&q=80" data-title="Xe Đua Tốc Độ Cao Drift 4WD">Xem lớn ảnh</button>
+                    </div>
+                    <div class="product-body">
+                        <span class="product-category">Xe Điều Khiển</span>
+                        <h3 class="product-title"><a href="#">Xe Đua Tốc Độ Cao Drift 4WD</a></h3>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span>(53)</span></div>
+                        <div class="product-price-box"><span class="current-price">580.000đ</span></div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phân trang Pagination -->
+            <div class="pagination">
+                <span class="page-item active">1</span>
+                <span class="page-item">2</span>
+                <span class="page-item">3</span>
+                <span class="page-item"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Lightbox -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-img" id="lightboxImage" src="" alt="Ảnh lớn">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center footer-bottom">
+            <p>&copy; 2026 <strong>ToyWorld</strong>. Assignment Môn Xây Dựng Trang Web - FPT Polytechnic.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
